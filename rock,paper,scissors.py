@@ -46,15 +46,24 @@ def update_score(result, player, computer):
 
 name, rounds = start_game()
 os.system('clear')
-count = 0
+count = 1
 player = 0
 computer = 0
-while count < rounds:
+while count <= rounds:
+    
     player_choice = get_player_choice(name)
     os.system('clear')
+
     computer_choice = get_computer_choice()
     result = determine_winner(player_choice, computer_choice)
     player,computer = update_score(result, player, computer)
     
-    print(f"\nSCORE:\n{name}: {player}\nComputer: {computer}")
+    print(f"\nSCORE after {count} rounds:\n{name}: {player}\nComputer: {computer}")
+    count += 1
     
+if player > computer:
+    print(f"{name} wins after winning {player} rounds!")
+elif computer > player:
+    print(f"The computer wins after winning {computer} rounds!")
+else:
+    print(f"It's a draw. {name} and the computer both won {player} rounds.")
