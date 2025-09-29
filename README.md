@@ -40,11 +40,14 @@ You need to implement the following functions. Each function has a clear, well-d
 
 ---
 
-2. **`get_computer_choice()`**:
-   - **Purpose**: This function randomly selects either "rock," "paper," or "scissors" for the computer's choice.
-   - **Input**: None.
-   - **Output**: Returns the emoji corresponding to the computer's randomly selected choice.
-   - **Hint**: Use `random.choice()` to select randomly from a list of the emojis.
+2. get_computer_choice()
+- **Purpose**: Randomly selects "rock," "paper," or "scissors" as the computer's choice.
+- **Input**: None
+- **Output**: Returns the emoji representing the computer's choice.
+- **Hint**: Use random.randint(1, 3) to generate a random number.
+   - If the number is 1, return "🪨" (rock).
+   - If the number is 2, return "📄" (paper).
+   - If the number is 3, return "✂️" (scissors).
 
 ---
 
