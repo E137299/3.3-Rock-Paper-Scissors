@@ -40,7 +40,7 @@ You need to implement the following functions. Each function has a clear, well-d
 
 ---
 
-2. get_computer_choice()
+2. **`get_computer_choice()`**:
 - **Purpose**: Randomly selects "rock," "paper," or "scissors" as the computer's choice.
 - **Input**: None
 - **Output**: Returns the emoji representing the computer's choice.
